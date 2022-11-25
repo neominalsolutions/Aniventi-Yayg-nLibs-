@@ -8,7 +8,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import {MatListModule} from '@angular/material/list';
-
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import { FormsModule } from '@angular/forms';
+import {CheckboxModule} from 'primeng/checkbox';
+import {ToggleButtonModule} from 'primeng/togglebutton';
 @NgModule({
   declarations: [
     AppComponent
@@ -19,7 +22,11 @@ import {MatListModule} from '@angular/material/list';
     NgbModule,
     BrowserAnimationsModule,
     AccordionModule.forRoot(),
-    MatListModule
+    MatListModule,
+    AutoCompleteModule,
+    FormsModule,
+    CheckboxModule,
+    ToggleButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

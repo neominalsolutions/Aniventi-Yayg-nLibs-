@@ -17,6 +17,9 @@ export class AppComponent implements OnInit {
   }
   title = 'AngularUIApp';
   message= 'Alert Message';
+  text!:string;
+  selectedValues!:any;
+  checked:boolean = false;
 
   data = [{name:'ali'},{name:'ahmet'}]
 
@@ -31,5 +34,9 @@ export class AppComponent implements OnInit {
 
   
 
+  }
+
+  search(event:any){
+    console.log('event', event);
   }
 }
