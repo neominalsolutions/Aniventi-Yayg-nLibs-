@@ -1,4 +1,9 @@
 
+
+<h1>Ngb Boostrapt Componentleri</h1>
+
+
+
 <!-- component kullanımı -->
 	<ngb-alert #alert type="success" (closed)="onClose()">{{message}}</ngb-alert>
 
@@ -16,4 +21,39 @@
   </div>
 
 
+  <hr>
+
+
+  <h1>Ngx Boostrapt Componentleri</h1>
+
+
+  <accordion>
+    <accordion-group heading="Static Header">
+      This content is straight in the template.
+    </accordion-group>
+    <accordion-group heading="Another group">
+      <p>Some content</p>
+    </accordion-group>
+    <accordion-group heading="Another group">
+      <p>Some content</p>
+    </accordion-group>
+    <accordion-group heading="Another group">
+      <p>Some content</p>
+    </accordion-group>
+  </accordion>
+
+
 <router-outlet></router-outlet>
+
+
+<hr>
+
+
+<h1>Angular Material Components </h1>
+
+
+<mat-selection-list #shoes>
+  <mat-list-option *ngFor="let shoe of ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers']">
+    {{shoe}}
+  </mat-list-option>
+</mat-selection-list>
